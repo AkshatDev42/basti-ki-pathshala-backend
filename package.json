@@ -1,0 +1,20 @@
+{
+  "name": "basti-ki-pathshala",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This is the Round-1 assignment for basti ki pathshala",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src\\index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshat Gohil",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1"
+  }
+}
