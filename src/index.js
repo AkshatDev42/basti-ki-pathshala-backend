@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import dbConnect from "./config/dbConnection.js";
+import userRoutes from "./route/user.route.js";
 
 //Configure the .env variables for this file
 dotenv.config({
@@ -20,6 +21,9 @@ app.use(cors());
 app.use(express.json({ 
     limit: "16kb"
 }));
+
+//Use User routes
+app.use("/users", userRoutes);
 
 //Take port number from .env file or 3000 (fallback)
 const PORT = process.env.PORT || 3000;
